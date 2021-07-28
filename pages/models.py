@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+# NB: model (Team) must be singular
 class Team(models.Model):
      first_name = models.CharField(max_length=255)
      last_name = models.CharField(max_length=255)

@@ -20,5 +20,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",include("pages.urls")) # initial home page which is located in the pages app
+    path("",include("pages.urls")), # initial home page which is located in the pages app
+    path("cars/",include("cars.urls")),
 ] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
